@@ -1,0 +1,146 @@
+2026-03-13T13:40:12+08:00 Using ImageMagick binary: "/opt/homebrew/bin/magick
+2026-03-13T13:40:12+08:00 ERROR: Source directory not found: /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/originals
+2026-03-13T13:40:12+08:00 Create it and copy your Drive PNGs there (e.g. public_html/assets/originals/).
+2026-03-13T13:41:02+08:00 Using ImageMagick binary: "/opt/homebrew/bin/magick
+2026-03-13T13:41:02+08:00 Starting processing: SRC_DIR=/Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/originals -> PROCESSED_DIR=/Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed
+2026-03-13T13:41:02+08:00 PROCESS: ZentropyTextTransparent.png
+2026-03-13T13:41:03+08:00 alpha=0 (identify channels='srgba 4.0')
+2026-03-13T13:41:03+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyTextTransparent_16x16.png
+2026-03-13T13:41:03+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyTextTransparent_32x32.png
+2026-03-13T13:41:03+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyTextTransparent_48x48.png
+2026-03-13T13:41:03+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyTextTransparent_64x64.png
+2026-03-13T13:41:03+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyTextTransparent_128x128.png
+2026-03-13T13:41:03+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyTextTransparent_180x180.png
+2026-03-13T13:41:03+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyTextTransparent_192x192.png
+2026-03-13T13:41:03+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyTextTransparent_256x256.png
+2026-03-13T13:41:03+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyTextTransparent_512x512.png
+2026-03-13T13:41:05+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/webp/ZentropyTextTransparent.webp (lossy)
+2026-03-13T13:41:05+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/favicons/ZentropyTextTransparent.ico and fallback 32px
+2026-03-13T13:41:05+08:00 DONE: ZentropyTextTransparent.png alpha=0
+2026-03-13T13:41:05+08:00 PROCESS: ZentropyNoSpaceReduced.png
+2026-03-13T13:41:05+08:00 alpha=0 (identify channels='srgb  3.0')
+2026-03-13T13:41:05+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyNoSpaceReduced_16x16.png
+2026-03-13T13:41:05+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyNoSpaceReduced_32x32.png
+2026-03-13T13:41:05+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyNoSpaceReduced_48x48.png
+2026-03-13T13:41:05+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyNoSpaceReduced_64x64.png
+2026-03-13T13:41:05+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyNoSpaceReduced_128x128.png
+2026-03-13T13:41:05+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyNoSpaceReduced_180x180.png
+2026-03-13T13:41:05+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyNoSpaceReduced_192x192.png
+2026-03-13T13:41:05+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyNoSpaceReduced_256x256.png
+2026-03-13T13:41:05+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyNoSpaceReduced_512x512.png
+2026-03-13T13:41:06+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/webp/ZentropyNoSpaceReduced.webp (lossy)
+2026-03-13T13:41:06+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/favicons/ZentropyNoSpaceReduced.ico and fallback 32px
+2026-03-13T13:41:06+08:00 DONE: ZentropyNoSpaceReduced.png alpha=0
+2026-03-13T13:41:06+08:00 PROCESS: ZentropyNoSpace.png
+2026-03-13T13:41:06+08:00 alpha=0 (identify channels='srgb  3.0')
+2026-03-13T13:41:06+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyNoSpace_16x16.png
+2026-03-13T13:41:06+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyNoSpace_32x32.png
+2026-03-13T13:41:06+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyNoSpace_48x48.png
+2026-03-13T13:41:06+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyNoSpace_64x64.png
+2026-03-13T13:41:06+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyNoSpace_128x128.png
+2026-03-13T13:41:06+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyNoSpace_180x180.png
+2026-03-13T13:41:07+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyNoSpace_192x192.png
+2026-03-13T13:41:07+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyNoSpace_256x256.png
+2026-03-13T13:41:07+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyNoSpace_512x512.png
+2026-03-13T13:41:07+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/webp/ZentropyNoSpace.webp (lossy)
+2026-03-13T13:41:07+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/favicons/ZentropyNoSpace.ico and fallback 32px
+2026-03-13T13:41:07+08:00 DONE: ZentropyNoSpace.png alpha=0
+2026-03-13T13:41:07+08:00 PROCESS: ZentropyIconReduced.png
+2026-03-13T13:41:07+08:00 alpha=0 (identify channels='srgb  3.0')
+2026-03-13T13:41:07+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconReduced_16x16.png
+2026-03-13T13:41:07+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconReduced_32x32.png
+2026-03-13T13:41:07+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconReduced_48x48.png
+2026-03-13T13:41:07+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconReduced_64x64.png
+2026-03-13T13:41:07+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconReduced_128x128.png
+2026-03-13T13:41:07+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconReduced_180x180.png
+2026-03-13T13:41:07+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconReduced_192x192.png
+2026-03-13T13:41:07+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconReduced_256x256.png
+2026-03-13T13:41:07+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconReduced_512x512.png
+2026-03-13T13:41:07+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/webp/ZentropyIconReduced.webp (lossy)
+2026-03-13T13:41:07+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/favicons/ZentropyIconReduced.ico and fallback 32px
+2026-03-13T13:41:07+08:00 DONE: ZentropyIconReduced.png alpha=0
+2026-03-13T13:41:07+08:00 PROCESS: ZentropyIconTransparentReduced.png
+2026-03-13T13:41:07+08:00 alpha=0 (identify channels='srgba 4.0')
+2026-03-13T13:41:07+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconTransparentReduced_16x16.png
+2026-03-13T13:41:07+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconTransparentReduced_32x32.png
+2026-03-13T13:41:07+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconTransparentReduced_48x48.png
+2026-03-13T13:41:08+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconTransparentReduced_64x64.png
+2026-03-13T13:41:08+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconTransparentReduced_128x128.png
+2026-03-13T13:41:08+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconTransparentReduced_180x180.png
+2026-03-13T13:41:08+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconTransparentReduced_192x192.png
+2026-03-13T13:41:08+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconTransparentReduced_256x256.png
+2026-03-13T13:41:08+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconTransparentReduced_512x512.png
+2026-03-13T13:41:08+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/webp/ZentropyIconTransparentReduced.webp (lossy)
+2026-03-13T13:41:08+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/favicons/ZentropyIconTransparentReduced.ico and fallback 32px
+2026-03-13T13:41:08+08:00 DONE: ZentropyIconTransparentReduced.png alpha=0
+2026-03-13T13:41:08+08:00 PROCESS: ZentropyThin.png
+2026-03-13T13:41:08+08:00 alpha=0 (identify channels='srgb  3.0')
+2026-03-13T13:41:08+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyThin_16x16.png
+2026-03-13T13:41:08+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyThin_32x32.png
+2026-03-13T13:41:09+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyThin_48x48.png
+2026-03-13T13:41:09+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyThin_64x64.png
+2026-03-13T13:41:09+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyThin_128x128.png
+2026-03-13T13:41:09+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyThin_180x180.png
+2026-03-13T13:41:10+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyThin_192x192.png
+2026-03-13T13:41:10+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyThin_256x256.png
+2026-03-13T13:41:10+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyThin_512x512.png
+2026-03-13T13:41:10+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/webp/ZentropyThin.webp (lossy)
+2026-03-13T13:41:10+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/favicons/ZentropyThin.ico and fallback 32px
+2026-03-13T13:41:10+08:00 DONE: ZentropyThin.png alpha=0
+2026-03-13T13:41:10+08:00 PROCESS: ZentropyThinReduced.png
+2026-03-13T13:41:11+08:00 alpha=0 (identify channels='srgb  3.0')
+2026-03-13T13:41:11+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyThinReduced_16x16.png
+2026-03-13T13:41:11+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyThinReduced_32x32.png
+2026-03-13T13:41:11+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyThinReduced_48x48.png
+2026-03-13T13:41:12+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyThinReduced_64x64.png
+2026-03-13T13:41:12+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyThinReduced_128x128.png
+2026-03-13T13:41:12+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyThinReduced_180x180.png
+2026-03-13T13:41:12+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyThinReduced_192x192.png
+2026-03-13T13:41:12+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyThinReduced_256x256.png
+2026-03-13T13:41:13+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyThinReduced_512x512.png
+2026-03-13T13:41:13+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/webp/ZentropyThinReduced.webp (lossy)
+2026-03-13T13:41:13+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/favicons/ZentropyThinReduced.ico and fallback 32px
+2026-03-13T13:41:13+08:00 DONE: ZentropyThinReduced.png alpha=0
+2026-03-13T13:41:13+08:00 PROCESS: ZentropyIcon.png
+2026-03-13T13:41:13+08:00 alpha=0 (identify channels='srgb  3.0')
+2026-03-13T13:41:13+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIcon_16x16.png
+2026-03-13T13:41:13+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIcon_32x32.png
+2026-03-13T13:41:13+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIcon_48x48.png
+2026-03-13T13:41:13+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIcon_64x64.png
+2026-03-13T13:41:13+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIcon_128x128.png
+2026-03-13T13:41:14+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIcon_180x180.png
+2026-03-13T13:41:14+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIcon_192x192.png
+2026-03-13T13:41:14+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIcon_256x256.png
+2026-03-13T13:41:14+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIcon_512x512.png
+2026-03-13T13:41:14+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/webp/ZentropyIcon.webp (lossy)
+2026-03-13T13:41:14+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/favicons/ZentropyIcon.ico and fallback 32px
+2026-03-13T13:41:14+08:00 DONE: ZentropyIcon.png alpha=0
+2026-03-13T13:41:14+08:00 PROCESS: ZentropyIconTransparent.png
+2026-03-13T13:41:14+08:00 alpha=0 (identify channels='srgba 4.0')
+2026-03-13T13:41:14+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconTransparent_16x16.png
+2026-03-13T13:41:14+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconTransparent_32x32.png
+2026-03-13T13:41:14+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconTransparent_48x48.png
+2026-03-13T13:41:14+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconTransparent_64x64.png
+2026-03-13T13:41:14+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconTransparent_128x128.png
+2026-03-13T13:41:14+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconTransparent_180x180.png
+2026-03-13T13:41:15+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconTransparent_192x192.png
+2026-03-13T13:41:15+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconTransparent_256x256.png
+2026-03-13T13:41:15+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyIconTransparent_512x512.png
+2026-03-13T13:41:15+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/webp/ZentropyIconTransparent.webp (lossy)
+2026-03-13T13:41:15+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/favicons/ZentropyIconTransparent.ico and fallback 32px
+2026-03-13T13:41:15+08:00 DONE: ZentropyIconTransparent.png alpha=0
+2026-03-13T13:41:15+08:00 PROCESS: ZentropyTextTransparentReduced.png
+2026-03-13T13:41:15+08:00 alpha=0 (identify channels='srgba 4.0')
+2026-03-13T13:41:15+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyTextTransparentReduced_16x16.png
+2026-03-13T13:41:15+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyTextTransparentReduced_32x32.png
+2026-03-13T13:41:15+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyTextTransparentReduced_48x48.png
+2026-03-13T13:41:15+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyTextTransparentReduced_64x64.png
+2026-03-13T13:41:15+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyTextTransparentReduced_128x128.png
+2026-03-13T13:41:15+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyTextTransparentReduced_180x180.png
+2026-03-13T13:41:15+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyTextTransparentReduced_192x192.png
+2026-03-13T13:41:15+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyTextTransparentReduced_256x256.png
+2026-03-13T13:41:15+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/icons/ZentropyTextTransparentReduced_512x512.png
+2026-03-13T13:41:15+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/webp/ZentropyTextTransparentReduced.webp (lossy)
+2026-03-13T13:41:15+08:00   wrote /Users/zennondeboer/Documents/GitHub/zentropysolutions/zentropysolutions/public_html/assets/processed/favicons/ZentropyTextTransparentReduced.ico and fallback 32px
+2026-03-13T13:41:15+08:00 DONE: ZentropyTextTransparentReduced.png alpha=0
+2026-03-13T13:41:15+08:00 === Finished pass ===

@@ -1,0 +1,4 @@
+2026-03-13T09:58:17+08:00 ERROR: Source directory not found: /Users/zennondeboer/Documents/GitHub/zentropysolutions/public_html/assets/originals
+2026-03-13T09:58:17+08:00 Create it and copy your Drive PNGs there (e.g. public_html/assets/originals/).
+2026-03-13T09:59:12+08:00 ERROR: ImageMagick not found (convert/identify or magick). Install ImageMagick and retry.
+2026-03-13T10:02:22+08:00 ERROR: ImageMagick not found (convert/identify or magick). Install ImageMagick and retry.
