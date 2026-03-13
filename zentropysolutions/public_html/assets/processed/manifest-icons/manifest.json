@@ -1,0 +1,37 @@
+{
+  "name": "Zentropy.Solutions",
+  "short_name": "Zentropy",
+  "description": "3D printing, engineering materials, scanning, CAD and electronics prototyping.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b1220",
+  "theme_color": "#00e0b8",
+  "icons": [
+    {
+      "src": "/assets/processed/manifest-icons/ZentropyIconTransparent_192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/processed/manifest-icons/ZentropyIconTransparent_512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/processed/manifest-icons/ZentropyIconTransparent_192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/processed/manifest-icons/ZentropyIconTransparent_512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
