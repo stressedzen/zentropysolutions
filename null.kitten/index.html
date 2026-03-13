@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Null.Kitten — Coming Soon</title>
+  <meta name="description" content="Null.Kitten — VDJ, lights & late-night mischief. Coming soon." />
+  <link rel="stylesheet" href="/nullkitten/css/styles.css" />
+  <meta name="theme-color" content="#08101a" />
+</head>
+<body>
+  <div class="nk-shell" role="main">
+    <header class="nk-header">
+      <a class="nk-brand" href="/" aria-label="Null.Kitten">
+        <svg class="nk-logo" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="nkGrad" x1="0" x2="1">
+              <stop offset="0" stop-color="#00E0B8"/>
+              <stop offset="1" stop-color="#5B7CFF"/>
+            </linearGradient>
+            <filter id="nkGlow" x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur stdDeviation="3" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <circle cx="60" cy="60" r="44" stroke="url(#nkGrad)" stroke-width="6" fill="none" filter="url(#nkGlow)"/>
+          <path d="M36 75 C46 52, 74 52, 84 75" fill="none" stroke="url(#nkGrad)" stroke-width="5" stroke-linecap="round"/>
+          <text x="60" y="62" text-anchor="middle" font-family="Montserrat, Inter, system-ui" font-weight="800" font-size="28" fill="url(#nkGrad)">NK</text>
+        </svg>
+
+        <span class="nk-brand-text">
+          <strong>Null.Kitten</strong>
+          <small>VDJ • Lights • Mischief</small>
+        </span>
+      </a>
+    </header>
+
+    <section class="nk-hero">
+      <h1 class="nk-title">Null.Kitten — Returning Soon</h1>
+      <p class="nk-lead">A new set of late-night visuals, heavy bass and mischief. We’re tuning the rig — stay tuned.</p>
+    </section>
+
+    <footer class="nk-footer">
+      <small>© <span id="yr"></span> Null.Kitten</small>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

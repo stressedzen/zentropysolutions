@@ -1,0 +1,90 @@
+/* Null.Kitten - minimal neon landing */
+:root{
+  --bg:#05070a;
+  --panel:#0f1724;
+  --muted:#9aa6b2;
+  --accent1:#00E0B8;
+  --accent2:#5B7CFF;
+  --glass: rgba(255,255,255,0.03);
+  --radius:14px;
+  --maxwidth:1100px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color-scheme: dark;
+  color:#eaf6ff;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:
+    radial-gradient(600px 380px at 10% 12%, rgba(91,124,255,0.06), transparent),
+    radial-gradient(600px 380px at 88% 86%, rgba(0,224,184,0.04), transparent),
+    linear-gradient(180deg,#04060a,#07101a 600px);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+  padding:28px;
+}
+
+/* shell */
+.nk-shell{
+  width:100%;
+  max-width:var(--maxwidth);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius:12px;
+  padding:38px;
+  box-shadow:0 20px 60px rgba(2,6,23,0.6);
+  border:1px solid rgba(255,255,255,0.03);
+  text-align:center;
+}
+
+/* header */
+.nk-header{display:flex;justify-content:center;align-items:center;margin-bottom:18px}
+.nk-brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
+.nk-logo{width:76px;height:76px;flex:0 0 76px}
+.nk-brand-text strong{display:block;font-size:1.1rem;letter-spacing:0.06em}
+.nk-brand-text small{display:block;color:var(--muted);font-size:0.86rem}
+
+/* hero */
+.nk-hero{padding:8px 6px}
+.nk-title{
+  font-size:clamp(2rem,4vw,3.2rem);
+  margin:6px 0 10px;
+  background:linear-gradient(90deg,var(--accent1),var(--accent2));
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  -webkit-text-fill-color:transparent;
+  text-transform:uppercase;
+  letter-spacing:0.14em;
+}
+.nk-lead{color:var(--muted);margin:12px auto 20px;max-width:66ch;font-size:1.02rem}
+
+/* actions */
+.nk-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:6px}
+.btn{
+  display:inline-block;padding:10px 14px;border-radius:10px;color:inherit;text-decoration:none;border:1px solid rgba(255,255,255,0.06);
+  background:transparent;font-weight:700;
+}
+.btn-ghost{
+  transition:transform .12s ease, box-shadow .12s ease;
+}
+.btn-ghost:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 30px rgba(10,20,40,0.45), 0 0 18px rgba(91,124,255,0.06) inset;
+  border-color: rgba(255,255,255,0.09);
+}
+
+/* footer */
+.nk-footer{margin-top:22px;color:var(--muted);font-size:0.86rem}
+
+/* responsive */
+@media (max-width:720px){
+  .nk-shell{padding:24px}
+  .nk-logo{width:58px;height:58px}
+  .nk-title{font-size:2rem}
+}
