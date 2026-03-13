@@ -1,184 +1,102 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Zentropy — Engineering 3D Printing & Prototyping</title>
-  <meta name="description" content="Zentropy.Solutions — 3D printing, engineering materials, scanning, CAD and electronics prototyping." />
+/* styles.css - simple responsive one-page style */
+:root{
+  --bg:#0b1220;
+  --panel:#0f1724;
+  --muted:#9aa6b2;
+  --accent:#00e0b8;
+  --accent-2:#5b7cff;
+  --glass: rgba(255,255,255,0.04);
+  --radius:12px;
+  --maxwidth:1100px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color-scheme: dark;
+  color:#e6eef6;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
 
-  <!-- favicon & apple touch - updated to match your generated files -->
-  <link rel="icon" href="/assets/processed/favicons/ZentropyIconTransparent.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/processed/icons/ZentropyIconTransparent_180x180.png" />
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:linear-gradient(180deg,var(--bg), #07101a 1600px);
+  color:var(--color, #e6eef6);
+  line-height:1.45;
+  font-size:16px;
+}
 
-  <!-- Optional manifest (uncomment if you add one) -->
-  <!-- <link rel="manifest" href="/assets/processed/manifest-icons/manifest.json" /> -->
+/* container */
+.wrap{
+  width:calc(100% - 48px);
+  max-width:var(--maxwidth);
+  margin:0 auto;
+}
 
-  <link rel="stylesheet" href="/css/styles.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="/">
-        <!-- logo: prefer webp, fall back to png -->
-        <picture>
-          <source srcset="/assets/processed/webp/ZentropyIconTransparent.webp" type="image/webp" />
-          <img class="logo" src="/assets/processed/icons/ZentropyIconTransparent_192x192.png" alt="Zentropy logo" width="48" height="48" />
-        </picture>
-        <span class="brand-text">
-          <strong>Zentropy</strong>
-          <small>Engineering &amp; 3D solutions</small>
-        </span>
-      </a>
+/* header */
+.site-header{
+  backdrop-filter: blur(6px);
+  position:sticky;
+  top:0;
+  z-index:40;
+  background: linear-gradient(180deg, rgba(15,23,36,0.6), rgba(8,12,18,0.35));
+  border-bottom:1px solid rgba(255,255,255,0.03);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+.brand .logo{border-radius:8px;display:block}
+.brand-text strong{display:block;font-size:1.1rem}
+.brand-text small{display:block;color:var(--muted);font-size:0.8rem;line-height:1}
 
-      <button id="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
-        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
+.site-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:18px}
+.site-nav a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:8px}
+.site-nav a:hover{color:var(--accent-2);background:var(--glass)}
 
-      <nav class="site-nav" id="site-nav">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#contact" class="cta">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+#nav-toggle{display:none;background:none;border:0;color:var(--muted)}
 
-  <main>
-    <section id="hero" class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <h1>Zentropy — Curious engineering, made tangible</h1>
-          <p class="lead">Rapid prototyping, engineering-grade 3D printing, 3D scanning, and electronics prototyping — materials and processes tuned for real use.</p>
-          <p class="hero-actions">
-            <a href="#contact" class="btn primary">Get a quote</a>
-            <a href="#work" class="btn ghost">See our work</a>
-          </p>
-          <ul class="hero-features">
-            <li>Engineering materials &amp; testing</li>
-            <li>Custom electronics &amp; prototyping</li>
-            <li>Design for manufacture</li>
-          </ul>
-        </div>
+/* hero */
+.hero{padding:48px 0}
+.hero-grid{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center}
+.hero-copy h1{margin:0 0 12px;font-size:clamp(1.6rem,2.4vw,2.6rem);line-height:1.03}
+.lead{color:var(--muted);margin:0 0 18px;font-size:1.05rem}
+.hero-actions .btn{margin-right:12px}
+.hero-media img{width:100%;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.6);display:block}
 
-        <div class="hero-media">
-          <!-- hero image: webp preferred -->
-          <picture>
-            <source srcset="/assets/processed/webp/ZentropyIcon.webp" type="image/webp" />
-            <img src="/assets/processed/icons/ZentropyIcon_512x512.png" alt="Sample 3D print" />
-          </picture>
-        </div>
-      </div>
-    </section>
+/* sections */
+.section{padding:48px 0}
+.section.alt{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-top:1px solid rgba(255,255,255,0.03)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.cards{display:flex;gap:18px;flex-wrap:wrap}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;flex:1 1 220px;min-width:180px}
+.card-icon{font-size:28px;margin-bottom:8px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.grid figure{margin:0;background:var(--panel);padding:12px;border-radius:10px;text-align:center}
+.grid img{max-width:100%;border-radius:8px;display:block;margin:0 auto}
 
-    <section id="about" class="wrap section">
-      <div class="two-col">
-        <div>
-          <h2>About Zentropy</h2>
-          <p>Zentropy.Solutions pairs engineering-grade 3D printing with practical materials knowledge and electronics prototyping. We help move projects from curious idea to robust prototype, with CAD, scanning and test-backed materials selection.</p>
-        </div>
-        <div>
-          <h3>Why choose us</h3>
-          <ul>
-            <li>Engineered materials for demanding applications</li>
-            <li>Rapid iteration with real-world testing</li>
-            <li>From conceptual design to electronics integration</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1fr 220px;gap:20px;align-items:center}
+.btn{display:inline-block;padding:10px 16px;border-radius:10px;color:inherit;text-decoration:none;border:1px solid rgba(255,255,255,0.06)}
+.btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#06121c;border:0}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06)}
 
-    <section id="services" class="wrap section alt">
-      <h2>Services</h2>
-      <div class="cards">
-        <article class="card">
-          <div class="card-icon">🖨️</div>
-          <h4>3D Printing</h4>
-          <p>High-performance materials, structural printing, and post-processing.</p>
-        </article>
+/* footer */
+.site-footer{padding:20px 0;border-top:1px solid rgba(255,255,255,0.03);color:var(--muted)}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.social a{color:var(--muted);text-decoration:none;margin-left:12px}
 
-        <article class="card">
-          <div class="card-icon">🧭</div>
-          <h4>3D Scanning &amp; CAD</h4>
-          <p>Scan, clean, CAD — create manufacturable models and assemblies.</p>
-        </article>
+/* responsiveness */
+@media (max-width: 980px){
+  .hero-grid{grid-template-columns:1fr; text-align:left}
+  .hero-media{order:2}
+  .two-col{grid-template-columns:1fr}
+  .grid{grid-template-columns:repeat(2,1fr)}
+}
 
-        <article class="card">
-          <div class="card-icon">🔌</div>
-          <h4>Electronics &amp; Prototyping</h4>
-          <p>Small-batch PCBs, microcontrollers, and integration with mechanical designs.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="work" class="wrap section">
-      <h2>Selected Work</h2>
-      <div class="grid">
-        <figure>
-          <picture>
-            <source srcset="/assets/processed/webp/ZentropyThin.webp" type="image/webp">
-            <img src="/assets/processed/icons/ZentropyThin_256x256.png" alt="Project 1">
-          </picture>
-          <figcaption>Material test prints</figcaption>
-        </figure>
-
-        <figure>
-          <picture>
-            <source srcset="/assets/processed/webp/ZentropyNoSpace.webp" type="image/webp">
-            <img src="/assets/processed/icons/ZentropyNoSpace_256x256.png" alt="Project 2">
-          </picture>
-          <figcaption>Functional enclosure</figcaption>
-        </figure>
-
-        <figure>
-          <picture>
-            <source srcset="/assets/processed/webp/ZentropyTextTransparent.webp" type="image/webp">
-            <img src="/assets/processed/icons/ZentropyTextTransparent_256x256.png" alt="Project 3">
-          </picture>
-          <figcaption>Electronics + mechanics</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section id="contact" class="wrap section alt">
-      <h2>Contact</h2>
-      <div class="contact-grid">
-        <div>
-          <p>For quotes or technical discussions, email:</p>
-          <p><a href="mailto:hello@zentropy.solutions">hello@zentropy.solutions</a></p>
-          <p>Or use the contact button to request a quote and upload files.</p>
-        </div>
-        <div>
-          <a class="btn primary large" href="mailto:hello@zentropy.solutions?subject=Request%20a%20quote">Request a quote</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <div>© <span id="year"></span> Zentropy.Solutions</div>
-      <div class="social">
-        <a href="#" aria-label="Twitter">Twitter</a>
-        <a href="#" aria-label="Instagram">Instagram</a>
-        <a href="#" aria-label="LinkedIn">LinkedIn</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    // small nav toggle and year fill
-    (function () {
-      const navToggle = document.getElementById('nav-toggle');
-      const siteNav = document.getElementById('site-nav');
-      navToggle.addEventListener('click', function () {
-        const expanded = this.getAttribute('aria-expanded') === 'true';
-        this.setAttribute('aria-expanded', String(!expanded));
-        siteNav.classList.toggle('open');
-      });
-      document.getElementById('year').textContent = new Date().getFullYear();
-    })();
-  </script>
-</body>
-</html>
+@media (max-width: 720px){
+  .wrap{width:calc(100% - 32px)}
+  #nav-toggle{display:inline-flex}
+  .site-nav{position:fixed;right:18px;top:62px;background:var(--panel);padding:12px;border-radius:12px;display:none;box-shadow:0 8px 30px rgba(0,0,0,0.6)}
+  .site-nav.open{display:block}
+  .site-nav ul{flex-direction:column;gap:8px}
+  .grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+}
