@@ -1,52 +1,249 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Null.Kitten — Coming Soon</title>
-  <meta name="description" content="Null.Kitten — VDJ, lights & late-night mischief. Coming soon." />
-  <link rel="stylesheet" href="/nullkitten/css/styles.css" />
-  <meta name="theme-color" content="#08101a" />
+  <style>
+    :root {
+      --bg: #07070b;
+      --bg-2: #0f1020;
+      --text: #f5f7ff;
+      --muted: #a6abc7;
+      --pink: #ff4fd8;
+      --cyan: #57e8ff;
+      --violet: #8b5dff;
+      --panel: rgba(255, 255, 255, 0.05);
+      --border: rgba(255, 255, 255, 0.12);
+      --glow: 0 0 24px rgba(255, 79, 216, 0.25), 0 0 48px rgba(87, 232, 255, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255, 79, 216, 0.14), transparent 28%),
+        radial-gradient(circle at 80% 30%, rgba(87, 232, 255, 0.14), transparent 28%),
+        radial-gradient(circle at 50% 100%, rgba(139, 93, 255, 0.12), transparent 35%),
+        linear-gradient(160deg, var(--bg), var(--bg-2));
+      color: var(--text);
+      overflow: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: radial-gradient(circle at center, black 45%, transparent 85%);
+      opacity: 0.3;
+    }
+
+    .wrap {
+      position: relative;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+      isolation: isolate;
+    }
+
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(42px);
+      opacity: 0.55;
+      z-index: -1;
+      animation: drift 12s ease-in-out infinite alternate;
+    }
+
+    .orb.one {
+      width: 18rem;
+      height: 18rem;
+      background: rgba(255, 79, 216, 0.22);
+      top: 12%;
+      left: 10%;
+    }
+
+    .orb.two {
+      width: 20rem;
+      height: 20rem;
+      background: rgba(87, 232, 255, 0.16);
+      bottom: 10%;
+      right: 10%;
+      animation-duration: 15s;
+    }
+
+    .card {
+      width: min(760px, 100%);
+      padding: clamp(2rem, 4vw, 4rem);
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      box-shadow: var(--glow);
+      backdrop-filter: blur(18px);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, transparent 20%, rgba(255,255,255,0.06) 50%, transparent 80%);
+      transform: translateX(-120%);
+      animation: sheen 8s linear infinite;
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.45rem 0.8rem;
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.04);
+      color: var(--muted);
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 1.25rem 0 0.75rem;
+      font-size: clamp(2.4rem, 8vw, 5.8rem);
+      line-height: 0.95;
+      letter-spacing: -0.05em;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-shadow: 0 0 18px rgba(255,79,216,0.22);
+    }
+
+    .brand {
+      display: block;
+      background: linear-gradient(90deg, var(--pink), #ffffff 40%, var(--cyan));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .sub {
+      max-width: 40rem;
+      margin: 0 auto 1.8rem;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      line-height: 1.7;
+    }
+
+    .divider {
+      width: 100px;
+      height: 2px;
+      margin: 1.6rem auto;
+      background: linear-gradient(90deg, transparent, var(--pink), var(--cyan), transparent);
+      border-radius: 999px;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 150px;
+      padding: 0.9rem 1.2rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      text-decoration: none;
+      color: var(--text);
+      background: rgba(255,255,255,0.05);
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.22);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255,255,255,0.3);
+      background: rgba(255,255,255,0.09);
+      box-shadow: 0 14px 36px rgba(0,0,0,0.3), 0 0 18px rgba(255,79,216,0.15);
+    }
+
+    .btn.primary {
+      background: linear-gradient(90deg, rgba(255,79,216,0.18), rgba(87,232,255,0.14));
+    }
+
+    .footer {
+      margin-top: 1.8rem;
+      font-size: 0.88rem;
+      color: #8d92af;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    @keyframes drift {
+      from { transform: translateY(0) translateX(0) scale(1); }
+      to { transform: translateY(24px) translateX(10px) scale(1.06); }
+    }
+
+    @keyframes sheen {
+      to { transform: translateX(120%); }
+    }
+
+    @media (max-width: 640px) {
+      body {
+        overflow: auto;
+      }
+
+      .card {
+        border-radius: 22px;
+      }
+
+      .links {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="nk-shell" role="main">
-    <header class="nk-header">
-      <a class="nk-brand" href="/" aria-label="Null.Kitten">
-        <svg class="nk-logo" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs>
-            <linearGradient id="nkGrad" x1="0" x2="1">
-              <stop offset="0" stop-color="#00E0B8"/>
-              <stop offset="1" stop-color="#5B7CFF"/>
-            </linearGradient>
-            <filter id="nkGlow" x="-60%" y="-60%" width="220%" height="220%">
-              <feGaussianBlur stdDeviation="3" result="b"/>
-              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-            </filter>
-          </defs>
-          <circle cx="60" cy="60" r="44" stroke="url(#nkGrad)" stroke-width="6" fill="none" filter="url(#nkGlow)"/>
-          <path d="M36 75 C46 52, 74 52, 84 75" fill="none" stroke="url(#nkGrad)" stroke-width="5" stroke-linecap="round"/>
-          <text x="60" y="62" text-anchor="middle" font-family="Montserrat, Inter, system-ui" font-weight="800" font-size="28" fill="url(#nkGrad)">NK</text>
-        </svg>
+  <main class="wrap">
+    <div class="orb one"></div>
+    <div class="orb two"></div>
 
-        <span class="nk-brand-text">
-          <strong>Null.Kitten</strong>
-          <small>VDJ • Lights • Mischief</small>
-        </span>
-      </a>
-    </header>
+    <section class="card">
+      <div class="eyebrow">Null.Kitten // Signal Incoming</div>
+      <h1>
+        <span class="brand">Coming Soon</span>
+      </h1>
+      <div class="divider"></div>
+      <p class="sub">
+        A new digital lair is on the way. Null.Kitten is sharpening the claws, tuning the lights,
+        and building something sleek, luminous, and a little bit feral.
+      </p>
 
-    <section class="nk-hero">
-      <h1 class="nk-title">Null.Kitten — Returning Soon</h1>
-      <p class="nk-lead">A new set of late-night visuals, heavy bass and mischief. We’re tuning the rig — stay tuned.</p>
+      
+
+      <p class="footer">Visuals • Light • Signal • Sedition</p>
     </section>
-
-    <footer class="nk-footer">
-      <small>© <span id="yr"></span> Null.Kitten</small>
-    </footer>
-  </div>
-
-  <script>
-    document.getElementById('yr').textContent = new Date().getFullYear();
-  </script>
+  </main>
 </body>
 </html>
